@@ -45,6 +45,11 @@ main {
       }
     }
 
+    .post-content {
+      font-size: $post-font-size;
+      font-family: $post-font-family;
+    }
+
     blockquote {
       margin: 2em 0;
       padding: 10px 20px;
@@ -82,8 +87,9 @@ main {
 
     &__title {
       margin: 0;
-      font-size: 30px;
-      font-weight: 400;
+      font-size: 25px;
+      font-weight: 350;
+      font-family: $post-font-family;
 
       @include underline-from-center;
     }
@@ -107,11 +113,14 @@ main {
 
     &__meta {
       font-size: 14px;
+      font-family: $post-font-family;
       color: #8a8a8a;
     }
 
     &__summary {
       margin-bottom: 1rem;
+      font-family: $post-font-family;
+      font-size: $post-font-size;
     }
   }
 
