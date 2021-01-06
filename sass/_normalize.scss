@@ -93,6 +93,8 @@ pre {
   span {
     font-family: $code-font-family; /* 1 */
     font-size: $code-font-size; /* 2 */
+    white-space: pre-wrap;
+    word-wrap: break-word;
   }
 }
 

@@ -2,7 +2,8 @@ main {
   clear: both;
 
   .content {
-    padding: 0 20px;
+    padding: 0 12px;
+    background-clip: content-box;
   }
 
   .posts {
@@ -23,6 +24,7 @@ main {
   .post {
     padding: 1.5rem 0;
     font-size: 95%;
+    background-color: $post-background-colour;
 
     h2, h3, h4, h5, h6 {
       font-weight: 400;
@@ -70,6 +72,7 @@ main {
       margin: 10px 0;
       border-spacing: 0;
       box-shadow: 2px 2px 3px rgba(0, 0, 0, .125);
+      table-layout: fixed;
 
       thead {
         background: $secondary-colour;
@@ -78,6 +81,8 @@ main {
       th, td {
         padding: 5px 15px;
         border: 1px double darken($secondary-colour, 3%);
+        word-wrap: break-word;
+        white-space: normal;
       }
 
       tr:hover {
@@ -188,6 +193,7 @@ main {
 .taxonomies {
   margin: 2em 0 3em;
   text-align: center;
+  background-color: $post-background-colour;
 
   &__title {
     display: inline-block;
@@ -221,6 +227,7 @@ main {
 
 .taxonomy {
   margin: 2em 0;
+  background-color: $post-background-colour;
 
   &__item {
     padding: 3px 20px;
