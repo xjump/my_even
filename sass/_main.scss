@@ -73,14 +73,15 @@ main {
       border-spacing: 0;
       box-shadow: 2px 2px 3px rgba(0, 0, 0, .125);
       table-layout: fixed;
+      background-color: $table-background-colour;
 
       thead {
-        background: $secondary-colour;
+        background: $table-border-colour;
       }
 
       th, td {
         padding: 5px 15px;
-        border: 1px double darken($secondary-colour, 3%);
+        border: 1px double darken($table-border-colour, 3%);
         word-wrap: break-word;
         white-space: normal;
       }
@@ -191,7 +192,8 @@ main {
 }
 
 .taxonomies {
-  margin: 2em 0 3em;
+  margin-top: 2em;
+  //padding: 0 12px;
   text-align: center;
   background-color: $post-background-colour;
 
@@ -226,7 +228,7 @@ main {
 }
 
 .taxonomy {
-  margin: 2em 0;
+  margin-top: 2em;
   background-color: $post-background-colour;
 
   &__item {
